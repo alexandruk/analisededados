@@ -1,0 +1,55 @@
+R download:
+https://cran.r-project.org/bin/
+
+RStudio download:
+https://rstudio.com/products/rstudio/download/
+
+Comando para limpar área de trabalho:
+ctrl + L
+
+Criar um vetor (x, por exemplo):
+x <- c(1,2,3,4,5)
+
+Apresentar o conteúdo do vetor x:
+x
+
+Nota: R é case sensitive
+
+***MÉDIA ARITMÉTICA
+
+Lista completa de packages R:
+https://cran.r-project.org/web/packages/available_packages_by_name.html/
+
+Apresenta os packages instalados:
+.libpath()
+
+Instala um novo package:
+install.packages("nome_do_package")
+
+Carrega um package (instalado):
+library(nome_do_package)
+
+Exemplo:
+
+Documentação do package psych:
+https://cran.r-project.org/web/packages/psych/psych.pdf
+
+Instalar o package psych
+install.packages("psych")
+
+Carregar o package psych:
+library(psych)
+
+Calcular a média geométrica (precisa carregar o package psych):
+geometric.mean(x,na.rm=TRUE)
+
+Exemplo:
+x <- c(1,1,1,1,1,1,1,1,2,2,2,2,2,2,3,3,3,3,3,5,5,5)
+geometric.mean(x)
+
+Calcular a média harmonica (precisa carregar o package psych):
+harmonic.mean(x,na.rm=TRUE,zero=TRUE)
+
+Exemplo:
+x <- c(1,1,1,1,1,1,1,1,2,2,2,2,2,2,3,3,3,3,3,5,5,5)
+harmonic.mean(x)
